@@ -37,6 +37,7 @@ SET PowerPoint=0
 SET Outlook=0
 SET Access=0
 SET OneNote=0
+SET OneDrive=0
 SET Teams=0
 SET Publisher=0
 SET Project=0
@@ -59,10 +60,11 @@ ECHO  3. PowerPoint........ !PowerPoint!
 ECHO  4. Outlook........... !Outlook!
 ECHO  5. Access............ !Access!
 ECHO  6. OneNote........... !OneNote!
-ECHO  7. Teams............. !Teams!
-ECHO  8. Publisher......... !Publisher!
-ECHO  9. Project........... !Project!
-ECHO 10. Visio............. !Visio!
+ECHO  7. OneDrive.......... !OneDrive!
+ECHO  8. Teams............. !Teams!
+ECHO  9. Publisher......... !Publisher!
+ECHO 10. Project........... !Project!
+ECHO 11. Visio............. !Visio!
 ECHO.
 ECHO  I. Install
 ECHO  X. Exit
@@ -75,10 +77,11 @@ IF "%opt%"=="3"  (IF !PowerPoint!==1 (SET PowerPoint=0) ELSE (SET PowerPoint=1))
 IF "%opt%"=="4"  (IF !Outlook!==1    (SET Outlook=0)    ELSE (SET Outlook=1))    & GOTO MENU
 IF "%opt%"=="5"  (IF !Access!==1     (SET Access=0)     ELSE (SET Access=1))     & GOTO MENU
 IF "%opt%"=="6"  (IF !OneNote!==1    (SET OneNote=0)    ELSE (SET OneNote=1))    & GOTO MENU
-IF "%opt%"=="7"  (IF !Teams!==1      (SET Teams=0)      ELSE (SET Teams=1))      & GOTO MENU
-IF "%opt%"=="8"  (IF !Publisher!==1  (SET Publisher=0)  ELSE (SET Publisher=1))  & GOTO MENU
-IF "%opt%"=="9"  (IF !Project!==1    (SET Project=0)    ELSE (SET Project=1))    & GOTO MENU
-IF "%opt%"=="10" (IF !Visio!==1      (SET Visio=0)      ELSE (SET Visio=1))      & GOTO MENU
+IF "%opt%"=="7"  (IF !OneDrive!==1   (SET OneDrive=0)   ELSE (SET OneDrive=1))   & GOTO MENU
+IF "%opt%"=="8"  (IF !Teams!==1      (SET Teams=0)      ELSE (SET Teams=1))      & GOTO MENU
+IF "%opt%"=="9"  (IF !Publisher!==1  (SET Publisher=0)  ELSE (SET Publisher=1))  & GOTO MENU
+IF "%opt%"=="10" (IF !Project!==1    (SET Project=0)    ELSE (SET Project=1))    & GOTO MENU
+IF "%opt%"=="11" (IF !Visio!==1      (SET Visio=0)      ELSE (SET Visio=1))      & GOTO MENU
 
 IF /i "%opt%"=="X" (
     IF EXIST "%~dp0config_auto.xml" DEL /f /q "%~dp0config_auto.xml"
@@ -237,13 +240,19 @@ ECHO       ^<Language ID="%language%" /^>
 IF %Word%==0        ECHO       ^<ExcludeApp ID="Word" /^>
 IF %Excel%==0       ECHO       ^<ExcludeApp ID="Excel" /^>
 IF %PowerPoint%==0  ECHO       ^<ExcludeApp ID="PowerPoint" /^>
-IF %Outlook%==0     ECHO       ^<ExcludeApp ID="Outlook" /^>
+IF %Outlook%==0     ECHO       ^<ExcludeApp ID="OutlookForWindows" /^>
 IF %Access%==0      ECHO       ^<ExcludeApp ID="Access" /^>
 IF %OneNote%==0     ECHO       ^<ExcludeApp ID="OneNote" /^>
+IF %OneDrive%==0    ECHO       ^<ExcludeApp ID="OneDrive" /^>
 IF %Teams%==0       ECHO       ^<ExcludeApp ID="Teams" /^>
 IF %Publisher%==0   ECHO       ^<ExcludeApp ID="Publisher" /^>
 IF %Project%==0     ECHO       ^<ExcludeApp ID="Project" /^>
 IF %Visio%==0       ECHO       ^<ExcludeApp ID="Visio" /^>
+
+:: Excluded Legacy Apps (Deprecated)
+ECHO 		^<ExcludeApp ID="Outlook" /^>
+ECHO 		^<ExcludeApp ID="Lync" /^>
+ECHO 		^<ExcludeApp ID="Groove" /^>
 
 ECHO     ^</Product^>
 ECHO   ^</Add^>
