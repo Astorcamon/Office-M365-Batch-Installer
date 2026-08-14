@@ -4,6 +4,10 @@ Microsoft Office 2024 LTSC — Install Guide
 
 This document provides instructions for downloading, configuring, and installing Microsoft 365 using either a customizable batch installer or the official Microsoft deployment method.
 
+Note
+The script will install Enterprise Edition using Current Channel.
+The user's Microsoft 365 subscription automatically determines the final edition (Personal, Family, Student, Business, Enterprise) and may switch the update channel after activation if required.
+
 ------------------------------------------------------------
 Requirements
 ------------------------------------------------------------
