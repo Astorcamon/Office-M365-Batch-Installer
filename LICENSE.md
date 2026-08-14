@@ -25,7 +25,7 @@ SOFTWARE.
 Additional Notice Regarding Microsoft Office:
 
 This project includes scripts intended to automate the deployment of
-Microsoft Office LTSC 2024. Microsoft Office itself is not included in this
+Microsoft Office 365. Microsoft Office itself is not included in this
 repository and is not covered by the MIT License. Microsoft Office is
 licensed separately under its own perpetual Microsoft license. Users must
 ensure they comply with all applicable Microsoft licensing terms when
