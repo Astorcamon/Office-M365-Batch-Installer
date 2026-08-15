@@ -15,6 +15,21 @@
 This is a customizable, interactive, and user‑friendly batch‑based installer for [Microsoft 365](https://learn.microsoft.com/en-us/microsoft-365-apps/deploy/about-microsoft-365-apps).<br/>
 The script is released under the [MIT License](./LICENSE.md), while Microsoft Office is covered by its own [Microsoft license](https://www.microsoft.com/en-us/microsoft-365/business/microsoft-365-plans-and-pricing).
 
+---
+
+## Features
+
+- Selectable Office Apps to install
+- Selectable language for Office Apps
+- Download and installs only the Apps you want
+
+#### Predefined Settings (Non modifiable)  
+- Architecture: x64  
+- Product: O365ProPlusRetail  
+- Channel: Current  
+- Updates: Enabled  
+- EULA: Accepted  
+
 > **Note**  
 > The script will install **Enterprise Edition** using **Current Channel** and **x64 architecture**.  
 > The user's **Microsoft 365 subscription automatically determines the final edition** (Personal, Family, Student, Business, Enterprise) **and may switch the update channel** after activation if required.
