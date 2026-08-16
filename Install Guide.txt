@@ -17,14 +17,16 @@ Using Setup-M365.bat installer (The easiest way)
 This method allows you to interactively select which Office applications and language to install.
 
 First steps:
+
 1. Download and extract the files from the latest release of "Setup-M365.zip":
    https://github.com/Astorcamon/Office-M365-Batch-Installer/releases/latest
 2. Download and run the official "Office Deployment Tool (ODT)":
    https://www.microsoft.com/en-us/download/details.aspx?id=49117
-3. Copy "Setup.exe" to the same folder as "Setup-M365.bat"
+3. Copy "Setup.exe" to the same folder as "Setup-M365.bat".
 
 Next steps:
-1. Run "Setup-M365.bat" as Administrator
+
+1. Run "Setup-M365.bat" as Administrator.
 2. Select the applications to install by entering their number and press Enter.
    Each application shows its status as =1 (Enabled) or =0 (Disabled).
 3. Enter I to begin the installation.
@@ -39,10 +41,12 @@ Using ODT (The official method)
 This method uses Microsoft’s official configuration and deployment workflow.
 
 First steps:
+
 1. Download and run the official "Office Deployment Tool (ODT)":
    https://www.microsoft.com/en-us/download/details.aspx?id=49117
 
 Next steps:
+
 1. Generate a custom XML configuration using the online "Configuration Tool":
    https://config.office.com/deploymentsettings
 2. Save the "generated XML file" in the same folder as "setup.exe".
