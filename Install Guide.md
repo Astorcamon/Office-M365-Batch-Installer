@@ -18,13 +18,13 @@ This method allows you to interactively select which Office applications and lan
 
 1. Download and extract the files from the latest release of [Setup-M365.zip](https://github.com/Astorcamon/Office-M365-Batch-Installer/releases/latest)
 2. Download and run the official [Office Deployment Tool (ODT)](https://www.microsoft.com/en-us/download/details.aspx?id=49117)  
-3. Copy `Setup.exe` to the same folder as `Setup-M365.bat`
+3. Copy `Setup.exe` to the same folder as `Setup-M365.bat`.
 
 **Next steps:**
 
-1. Run `Setup-M365.bat` **as Administrator**
+1. Run `Setup-M365.bat` **as Administrator**.
 2. Select the applications to install by entering their number and press Enter.
-   - Each application shows its status as **=1 (Enabled)** or **=0 (Disabled).**
+   - Each application shows its status as **=1 (Enabled)** or **=0 (Disabled)**.
 3. Enter **I** to begin the installation.
 4. Select the language to install by entering its number and press Enter.
 
