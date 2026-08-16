@@ -31,8 +31,8 @@ Next steps:
 4. Select the language to install by entering its number and press Enter.
 
 ------------------------------------------------------------
-
 Alternative methods
+------------------------------------------------------------
 
 Using ODT (The official method)
 
@@ -51,6 +51,8 @@ Next steps:
 5. Once the download completes, install Office: setup.exe /configure configuration.xml
 
 Learn more: https://learn.microsoft.com/en-us/microsoft-365-apps/deploy/deploy-microsoft-365-apps-cloud
+
+------------------------------------------------------------
 
 Using OTP (The AIO Tool for Office)
 
