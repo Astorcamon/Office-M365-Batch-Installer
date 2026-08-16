@@ -20,9 +20,9 @@ The script is released under the [MIT License](./LICENSE.md), while Microsoft Of
 
 ## Features
 
-- Selectable Office Apps to install
-- Selectable language for Office Apps
-- Download and installs only the Apps you choose
+- Selectable Office Apps to install.
+- Selectable language for Office Apps.
+- Download and installs only the Apps you choose.
 
 #### Predefined Settings (Non modifiable)
 
@@ -52,9 +52,9 @@ This method allows you to interactively select which Office applications and lan
 
 **Next steps:**
 
-1. Run `Setup-M365.bat` **as Administrator**
+1. Run `Setup-M365.bat` **as Administrator**.
 2. Select the applications to install by entering their number and press Enter.
-   - Each application shows its status as **=1 (Enabled)** or **=0 (Disabled).**
+   - Each application shows its status as **=1 (Enabled)** or **=0 (Disabled)**.
 3. Enter **I** to begin the installation.
 4. Select the language to install by entering its number and press Enter.
 
