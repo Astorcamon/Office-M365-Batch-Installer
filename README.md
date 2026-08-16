@@ -1,5 +1,5 @@
 <div align="center">
-   
+
 <!-- Badges - Replace projectName with the name of the project also, change or add the link-->
 
 [![Visits](https://visitor-badge.laobi.icu/badge?page_id=Astorcamon.Office-M365-Batch-Installer)](https://github.com/Astorcamon/Office-M365-Batch-Installer)
@@ -12,6 +12,7 @@
 ---
 
 # Microsoft 365 - Batch Installer
+
 This is a customizable, interactive, and user‑friendly batch‑based installer for [Microsoft 365](https://learn.microsoft.com/en-us/microsoft-365-apps/deploy/about-microsoft-365-apps).<br/>
 The script is released under the [MIT License](./LICENSE.md), while Microsoft Office is covered by its own [Microsoft license](https://www.microsoft.com/en-us/microsoft-365/business/microsoft-365-plans-and-pricing).
 
@@ -21,9 +22,10 @@ The script is released under the [MIT License](./LICENSE.md), while Microsoft Of
 
 - Selectable Office Apps to install
 - Selectable language for Office Apps
-- Download and installs only the Apps you want
+- Download and installs only the Apps you choose
 
-#### Predefined Settings (Non modifiable)  
+#### Predefined Settings (Non modifiable)
+
 - Architecture: x64  
 - Product: O365ProPlusRetail  
 - Channel: Current  
@@ -36,62 +38,72 @@ The script is released under the [MIT License](./LICENSE.md), while Microsoft Of
 
 ---
 
-## Requirements
+## How to install - Microsoft Office 365
 
-Before proceding, download the official **[Office Deployment Tool (ODT)](https://www.microsoft.com/en-us/download/details.aspx?id=49117)**:
+### Using Setup-M365.bat Installer (The easiest way)
 
-Running the tool will extract the following files:
+This method allows you to interactively select which Office applications and language to install.
 
-- `setup.exe`
-- `configuration-Office365-x64.xml`
+**First steps:**
 
-The `setup.exe` file is required for installation, while the XML file is safe to delete.
+1. Download and extract the files from the latest release of [Setup-M365.zip](https://github.com/Astorcamon/Office-M365-Batch-Installer/releases/latest)
+2. Download and run the official [Office Deployment Tool (ODT)](https://www.microsoft.com/en-us/download/details.aspx?id=49117)  
+3. Copy `Setup.exe` to the same folder as `Setup-M365.bat`
+
+**Next steps:**
+
+1. Run `Setup-M365.bat` **as Administrator**
+2. Select the applications to install by entering their number and press Enter.
+   - Each application shows its status as **=1 (Enabled)** or **=0 (Disabled).**
+3. Enter **I** to begin the installation.
+4. Select the language to install by entering its number and press Enter.
 
 ---
 
-## How to install
+## Alternative methods
 
-### Option 1 (User-friendly GUI)
+<details>
+<summary> Click here to expand</summary>
 
-This method allows you to interactively select which Office applications to install.
-
-1. Download the latest release of [Setup-M365.zip](https://github.com/Astorcamon/Office-M365-Batch-Installer/releases/latest)
-2. Extract and place the files it in the same directory as `Setup.exe`.   
-3. Run the batch file **as Administrator**.
-4. Select the applications to install by entering the corresponding number.
-  - Each application shows its status as **=1 (Enabled)** or **=0 (Disabled).**
-5. Enter **I** to begin the installation.
-6. Select the language to install by entering its number
-
-This option is recommended for users who want a simple, menu‑based installation process.
-
-### Option 2 (For Advanced Users)
+### Using ODT (The official method)
 
 This method uses Microsoft’s official configuration and deployment workflow.
 
-1. Generate a custom XML configuration using the online [Configuration Tool](https://config.office.com/deploymentsettings)
-2. Save the generated XML file in the same folder as `setup.exe`.  
-3. Open **Command Prompt as Administrator** in that folder.  
-4. Download the Office installation files: `setup.exe /download configuration.xml`  
-5. Once the download completes, install Office: `setup.exe /configure configuration.xml`  
+**First steps:**
 
-This option is recommended for IT administrators or advanced users who need full control over deployment settings.
+1. Download and run the official [Office Deployment Tool (ODT)](https://www.microsoft.com/en-us/download/details.aspx?id=49117)
+
+**Next steps:**
+
+1. Generate a custom XML configuration using the online [Configuration Tool](https://config.office.com/deploymentsettings)
+2. Save the generated XML file in the same folder as `setup.exe`.
+3. Open **Command Prompt as Administrator** in that folder.
+4. Download the Office installation files: `setup.exe /download configuration.xml`
+5. Once the download completes, install Office: `setup.exe /configure configuration.xml`
 
 Learn more: https://learn.microsoft.com/en-us/microsoft-365-apps/deploy/deploy-microsoft-365-apps-cloud
+
+### Using OTP (The AIO Tool for Office)
+
+The Office Tool Plus integrates Microsoft’s official deployment workflow into a third‑party tool with a full graphical UI and more features.
+
+Learn more: https://www.officetool.plus/
+
+</details>
 
 ---
 
 ## Screenshots
 
-<img src="docs/Screenshots/Menu.png" width="300"> <img src="docs/Screenshots/Language.png" width="300" height="605">
+<img src="screenshots/Menu.png" width="300"> <img src="screenshots/Language.png" width="300">
 
 ---
 
 ## Contributions
 
 <Table>
-   <th>Paypal</th>
-   <th>Github</th>
+   <th>PayPal</th>
+   <th>GitHub</th>
    <th>Ko-Fi</th>
   <tr>
     <td><a href="https://www.paypal.com/donate?hosted_button_id=P2C76DEXQEEFQ"><img src="https://img.shields.io/badge/Donate-blue?style=flat&logo=paypal" width="115"/></a></td>
@@ -99,3 +111,5 @@ Learn more: https://learn.microsoft.com/en-us/microsoft-365-apps/deploy/deploy-m
     <td><a href="https://ko-fi.com/astorcamon"><img src="https://img.shields.io/badge/Donate-gray?style=flat&logo=kofi" width="128"/></a></td>
   </tr>
 </table>
+
+
